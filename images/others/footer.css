@@ -1,0 +1,16 @@
+footer{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    overflow: hidden;
+    border-top: 3px lightgrey solid;
+}
+
+footer p{
+    position: relative;
+    text-align: center;
+    color: rgb(168, 161, 161);
+    font-weight: 100;
+    margin: 50px auto;
+}

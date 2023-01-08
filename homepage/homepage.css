@@ -1,0 +1,408 @@
+@import '../css/nav.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font: 14px/1.5 'Microsoft YaHei', arial, tahoma, \5b8b\4f53, sans-serif;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 首页开始背景部分*/
+
+.home-pic {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background: url('../images/homepage/homebackground.jpg');
+    background-size: cover;
+}
+
+.home-pic .container-text {
+    position: absolute;
+    width: 100%;
+    top: 30vh;
+    text-align: center;
+}
+
+.home-pic h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.home-pic h1::after {
+    content: "即刻出发"
+}
+
+.home-pic h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+@media only screen and (max-width: 640px) {
+    .home-pic {
+        min-height: 850px;
+    }
+
+    .home-pic .container-text {
+        position: absolute;
+        width: 100%;
+        top: 30vh;
+        text-align: center;
+    }
+
+    .home-pic h1 {
+        font-size: 60px;
+        letter-spacing: 0px;
+        color: white;
+    }
+
+    .home-pic h1::after {
+        display: block;
+        content: "即刻出发"
+    }
+
+    .home-pic h2 {
+        padding: 20px;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: white;
+    }
+}
+
+/* 视觉风景部分*/
+
+.picwrap {
+    width: 100%;
+    height: 400px;
+    background: black;
+    color: white;
+}
+
+.picwrap-intro {
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 40px 30px 0 13%;
+}
+
+.picwrap-intro span {
+    color: darksalmon;
+    font-size: 10px;
+}
+
+.picwrap-intro p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.picwrap-intro img {
+    width: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+.picwrap-intro img:hover {
+    opacity: 1;
+}
+
+.picwrap-wrap-scroll {
+    width: 70%;
+    height: 520px;
+    overflow: hidden;
+    float: right;
+}
+
+.picwrap-wrap {
+    width: 100%;
+    height: 540px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.picwrap-wrap li {
+    display: inline-block;
+    width: 350px;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+    box-shadow: 10 10 10 1 black;
+}
+
+.picwrap-wrap li img {
+    width: 100%;
+    height: 100%;
+}
+
+.picwrap-p {
+    position: absolute;
+    bottom: 0;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.picwrap-p span {
+    font-weight: bold;
+    color: white;
+}
+
+.picwrap-p p {
+    padding-top: 10px;
+    white-space: normal;
+    color:white;
+}
+
+/*主题故事部分*/
+
+.themestory {
+    position: relative;
+    width: 100%;
+    height: 1250px;
+    background: url(../images/homepage/themebackg.jpg);
+    background-size: cover;
+    z-index: -10;
+    padding-top: 170px;
+}
+
+.themestory h2 {
+    margin-top: 80px;
+    font-size: 14px;
+    text-align: center;
+    color: bisque
+}
+
+.themestory h3 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.themestory-pics {
+    width: 60%;
+    height: 650px;
+    margin: 100px auto;
+    margin-bottom: 0;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .themestory-pics {
+        width: 90%;
+        height: 650px;
+        margin: 70px auto;
+        position: relative;
+    }
+
+    .picwrap-intro p {
+        display: none;
+    }
+}
+
+.themestory-lefttext {
+    z-index: 5;
+    width: 50%;
+    position: absolute;
+    left: -10%;
+    top: 400px;
+    text-align: right;
+}
+
+.themestory-righttext {
+    z-index: 5;
+    width: 50%;
+    position: absolute;
+    left: 60%;
+}
+
+.themestory-pics img {
+    width: 50%;
+    height: 600px;
+    position: absolute;
+}
+
+.themestory-pics-right {
+    right: 0;
+    top: 40px;
+}
+
+.themestory-pics h5 {
+    font-size: 25px;
+    line-height: 36px;
+    color:white;
+}
+
+.themestory-pics h4 {
+    font-size: 36px;
+    line-height: 36px;
+    color: white;
+}
+
+.themestory-pics p {
+    font-size: 12px;
+    color:white;
+}
+
+.themestory-pics span {
+    font-size: 12px;
+    line-height: 80px;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .themestory-lefttext {
+        z-index: 5;
+        width: 40%;
+        position: absolute;
+        left: 0%;
+        top: 400px;
+        text-align: right;
+    }
+    
+    .themestory-righttext {
+        z-index: 5;
+        width: 40%;
+        position: absolute;
+        left: 60%;
+    }
+}
+
+.themestory-nav {
+    width: 100px;
+    margin: 30px auto;
+}
+
+.themestory-nav ul {
+    justify-content: space-between;
+    display: flex;
+}
+
+.themestory-nav li{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: whitesmoke;
+    border-radius: 50%;
+}
+
+/* 夜景专区部分 */
+
+
+/* 景点攻略部分 */
+.guide{
+    height: 360px;
+}
+
+.guide-back{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: -10;
+    background-color: black;
+
+}
+
+.guide-pic{
+    position: relative;
+    height: 360px;
+    width: 45vw;
+    overflow: hidden;
+}
+
+.slider li{
+    height: 360px;
+    overflow: hidden;
+}
+
+.slider img{
+    width:100%;
+    min-height: 360px;
+    float:left;
+}
+
+.guide h2{
+    position: absolute;
+    right: 10vw;
+    top: 10%;
+    font-size: 14px;
+    color: bisque;
+}
+
+.guide h3{
+    position: absolute;
+    right: 10vw;
+    top: 20%;
+    font-size: 20px;
+    color: white;
+}
+
+.guide p{
+    position: absolute;
+    width:35vw;
+    right: 10vw;
+    top: 40%;
+    color:white;
+}
+
+/* 旅行分享部分 */
+.share{
+    width: 100%;
+    height: 540px;
+}
+
+.share-pic{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    top: -60px;
+    background: url(../images/homepage/shareback.jpg);
+    background-size: cover;
+    z-index: -15;
+}
+
+.share h2{
+    position: absolute;
+    left: 5vw;
+    bottom: 15%;
+    font-size: 14px;
+    text-align: center;
+    color: bisque
+}
+
+.share h3{
+    position: absolute;
+    left: 5vw;
+    bottom: 10%;
+    font-size: 20px;
+    color: white;
+}
+
+.share p{
+    position: absolute;
+    left: 5vw;
+    bottom: 5%;
+    color: white;
+}
+
+.carousel-inner{
+    left: 35%;
+    top: 150px;
+    width: auto;
+    height: 360px;
+}
